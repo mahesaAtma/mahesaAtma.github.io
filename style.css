@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-image: linear-gradient(to right,#f7c7ff,#cee0ff); 
+}
+
+nav .navbar-brand{
+    font-family: "Exo Extrabold";
+    padding: 10px;
+}
+
+nav .navbar-collapse{
+    font-family: "Expressway";
+    padding: 10px;
+}
+
+/* main Section */
+main{
+    text-align: center;
+    background-image: linear-gradient(to right,#f7c7ff,#cee0ff);
+}
+main h1{
+    font-family: "Exo";
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+main p{
+    font-family: "Expressway";
+    font-size: 10px;
+    width: 70%;
+    margin: 0 auto;
+}
+main button{
+    width: 50%;
+}
+main img{
+    display: none;
+}
+.mainLeft{
+    margin:50px auto;
+}
+
+/* Carousel Section */
+.myJourney{
+    margin-top: 50px;
+}
+
+.carouselSection{
+    width: 100%;
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 60%;
+    transition: 0.5s;
+}
+.carouselSection img{
+    float: left;
+    margin-top: 70px;
+    position: relative;
+    transform: translate(0,-50%);
+}
+h3{
+    font-family: "Exo";
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.carouselSection .firstImage{
+    transition: 0.5s;
+    width: 12%;
+}
+.carouselSection .secondImage{
+    transition: 0.5s;
+    width: 18%;
+    /* height: 60px; */
+}
+.carouselSection .lastImage{
+    transition: 0.5s;
+    width: 22%;
+}
+.container i:hover{
+    font-size: 26px;
+    color: #0a0a0a;
+}
+.container i{
+    font-size: 15px;
+    color: #737373;
+    transition: 0.5s;
+    
+}
+.rightBtn{
+    position: relative;
+    left: 30%;
+}
+.leftBtn{
+    position: relative;
+    right: 30%;
+}
+
+/* Paralyze Section */
+.outter{
+    margin-top: 200px;
+    background-image: url("img/Layer_9.webp");
+    background-size: cover;
+    background-position: center;
+    clear: left;
+    background-attachment: fixed;
+}
+.wrapper{
+    padding: 30px;
+    color: white;
+}
+
+.wrapper h2{
+    font-family: "Exo black";
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.wrapper p{
+    font-family: "Expressway";
+    font-size: 10px;
+}
+
+/* About Us Section */
+.aboutUs{
+    transform: translateY(80px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.aboutUs img{
+    height: 250px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.aboutUs p{
+    width: 70%;
+    font-size: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+/* Activity Section */
+.activitySection{
+    margin-top: 100px;
+}
+h4{
+    font-family: "Exo Medium";
+    font-size: 20px;
+}
+.activitySection p{
+    margin: 0 auto;
+    font-size: 10px;
+    width: 60%;
+}
+.activitySection img{
+    margin: 35px auto;
+    font-size: 10px;
+    width: 10%;
+}
+.imgActivity{
+    opacity: 0;
+    transform: rotate(-90deg);
+    transition: 0.7s;
+}
+/* Footer Section */
+footer{
+    color: white;
+    background-image: linear-gradient(45deg,#1e1d25,#121215);
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer h5{
+    font-family: "Exo Black";
+}
+footer ul li{
+    list-style-type: none;
+    font-family: "Exo Thin";
+}
+footer hr{
+    background-color: white;
+    width: 100%;
+    height: 2px;
+}
+.companyFooter h6{
+    font-size: 25px;
+    font-weight: 700;
+}
+.companyFooter p{
+    letter-spacing: 2px;
+}
+.companyFooter img{
+    width: 60px;
+    height: auto;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* main Section */
+    
+    nav .navbar-brand{
+        padding: 25px;
+    }
+
+    nav .navbar-collapse{
+        padding: 25px;
+    }
+    main{
+        overflow: hidden;
+        text-align: left;
+    }
+    main h1{
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+    main p{
+        font-size: 12px;
+        margin: 0;
+        width: 100%;
+    }
+    main button{
+        width: 70%;
+    }
+    .mainLeft{
+        position: relative;
+        left: 15%;
+        
+    }
+    main img{
+        display: block;
+        width: 75%;
+        position: relative;
+        left: 47%;
+        
+    }
+
+    /* Carousel Section */
+        
+    .myJourney{
+        margin-top: 90px;
+    }
+    .carouselSection img{
+        margin-top: 120px;
+    }
+    h3{
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    /* Paralyze Section */
+    .wrapper{
+        padding: 50px;
+    }
+
+    .wrapper h2{
+        font-size: 30px;
+        letter-spacing: 7px;
+    }
+    .wrapper p{
+        font-size: 12px;
+    }
+
+    /* About Us Section */
+    .aboutUs{
+        margin-top: 100px;
+    }
+    .aboutUs img{
+        height: 250px;
+        width: 60%;
+        margin: 0;
+        margin-top: 0px;
+    }
+    .aboutUs p{
+        width: 70%;
+        font-size: 10px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    /* Activity Section */
+    .activitySection{
+        margin-top: 150px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    .activitySection p{
+        margin: 0 auto;
+        font-size: 10px;
+        width: 80%;
+    }
+    .activitySection img{
+        margin: 36px auto;
+        margin-top: 70px;
+        font-size: 10px;
+        width: 40%;
+    }
+    /* Footer Section */
+    footer{
+        margin-top: 150px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    nav .navbar-brand{
+        font-family: "Exo Extrabold";
+        padding: 38px;
+        position: relative;
+        left: 32%;
+        font-size: 30px;
+
+    }
+
+    nav .navbar-collapse{
+        font-family: "Expressway";
+        padding: 38px;
+
+    }
+    /* main Section */
+    
+ 
+    main{
+        overflow: hidden;
+        text-align: left;
+    }
+    main h1{
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+    main p{
+        font-size: 15px;
+        margin: 0;
+        width: 100%;
+    }
+    main button{
+        width: 60%;
+    }
+    .mainLeft{
+        position: relative;
+        left: 10%;
+        margin-top: 160px;
+    }
+    main img{
+        display: block;
+        width: 75%;
+        position: relative;
+        left: 47%;
+        
+    }
+
+    /* Carousel Section */
+    
+    .myJourney{
+        margin-top: 140px;
+    }
+    .carouselSection img{
+        margin-top: 220px;
+    }
+    h3{
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    /* Paralyze Section */
+    .wrapper{
+        padding: 50px;
+    }
+
+    .wrapper h2{
+        font-size: 30px;
+        letter-spacing: 7px;
+    }
+    .wrapper p{
+        font-size: 12px;
+    }
+
+    /* About Us Section */
+    .aboutUs{
+        margin-top: 160px;
+    }
+    .aboutUs img{
+        height: 350px;
+        width: 60%;
+        margin: 0;
+        margin-top: 0px;
+    }
+    .aboutUs p{
+        width: 70%;
+        font-size: 14px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    /* Activity Section */
+    .activitySection{
+        margin-top: 150px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    .activitySection p{
+        margin: 0 auto;
+        font-size: 12px;
+        width: 90%;
+    }
+    .activitySection img{
+        margin: 36px auto;
+        margin-top: 70px;
+        font-size: 10px;
+        width: 30%;
+    }
+    /* Footer Section */
+    footer{
+        margin-top: 150px;
+        text-align: center;
+    }
+}
