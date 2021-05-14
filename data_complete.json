@@ -1,0 +1,315 @@
+{
+    "AI1": [
+        {
+            "title": "Yoga Detector - CNN (VGG16)",
+            "tech": [
+                "Python",
+                "Tensorflow",
+                "Keras",
+                "OpenCV"
+            ],
+            "algorithm": [
+                "CNN",
+                "VGG 16"
+            ],
+            "description": "This application is made when i took the course of Computer Vision. The lecturer give us as a team an assigment to do a Yoga Detector",
+            "link": "https://www.youtube.com/embed/j9w9UYgQ-48?&playlist=j9w9UYgQ-48&loop=1&autoplay=1&mute=1&controls=0"
+        },
+        {
+            "title": "Number Guessing - Mnist - Python",
+            "tech": [
+                "Python",
+                "Tensorflow",
+                "Keras",
+                "OpenCV",
+                "PyGame"
+            ],
+            "algorithm": [
+                "CNN",
+                "Alex Net"
+            ],
+            "description": "The reason behind this application is an asbsolute fun, i was also curious about how CNN works. I took Mnist because the dataset has already provided publicly.",
+            "link": "https://www.youtube.com/embed/0_fLwXJPGj8?&playlist=0_fLwXJPGj8&loop=1&autoplay=1&mute=1&controls=0"
+        },
+        {
+            "title": "Automatic Youtube Comment",
+            "tech": [
+                "Python",
+                "Selenium"
+            ],
+            "algorithm": [],
+            "description": "This application is inspired to a youtuber that always do a giveaway. Unfortunately it's deprecated, and of course won't work at real youtube comment, because it's policy",
+            "link": "https://www.youtube.com/embed/AQeJZ59ang4?&playlist=AQeJZ59ang4&loop=1&autoplay=1&mute=1&controls=0"
+        },
+        {
+            "title": "Titanic Prediction - Flask - Python",
+            "tech": [
+                "Python",
+                "Flask",
+                "SKlearn",
+                "Seaborn"
+            ],
+            "algorithm": [
+                "KMeans",
+                "Supervised Learning"
+            ],
+            "description": "This application is done for the final assignment for Machine Learning Couse that i took. It was also for practice what i had learn from Udemy",
+            "link": "https://www.youtube.com/embed/pnAC2LuepAU?&playlist=pnAC2LuepAU&loop=1&autoplay=1&mute=1&controls=0"
+        },
+        {
+            "title": "HaarCascade - Eyes -Face - Simple Implementation",
+            "tech": [
+                "Python",
+                "OpenCV"
+            ],
+            "algorithm": [
+                "HaarCascade"
+            ],
+            "description": "This simple HaarCascade is done only because of curiosity.",
+            "link": "https://www.youtube.com/embed/BjwQ7JlaFD0?&playlist=BjwQ7JlaFD0&loop=1&autoplay=1&mute=1&controls=0"
+        }
+    ],
+    "AI2": [
+        {
+            "title": "CSV To GCalendar",
+            "tech": [
+                "Python",
+                "GCalendarAPI"
+            ],
+            "algorithm": [],
+            "description": "Based on nothing except curiosity, i make an static CSV To GCalendar Application",
+            "link": "https://www.youtube.com/embed/diUbIitCq8I?&playlist=diUbIitCq8I&loop=1&autoplay=1&mute=1&controls=0"
+        },
+        {
+            "title": "A * Algorithm",
+            "tech": [
+                "Python",
+                "Numpy"
+            ],
+            "algorithm": [
+                "A Star(A*)"
+            ],
+            "description": "I love AI dan automation, and learning one of those algorithm it's quite fascinating.",
+            "link": "https://www.youtube.com/embed/l6VvJ7Zz29Y?&playlist=l6VvJ7Zz29Y&loop=1&autoplay=1&mute=1&controls=0"
+        },
+        {
+            "title": "Chatbot Itenas",
+            "tech": [
+                "Python",
+                "Sastrawi",
+                "NLTK",
+                "SKlearn"
+            ],
+            "algorithm": [
+                "NLP"
+            ],
+            "description": "This is an implementation from what i had learn at Udemy. Also, it's for course that i took called Neural Language Processing",
+            "link": "https://www.youtube.com/embed/ip7UDRnHP7k?&playlist=ip7UDRnHP7k&loop=1&autoplay=1&mute=1&controls=0"
+        },
+        {
+            "title": "Simple Flappy Bierdy [GAME]",
+            "tech": [
+                "Javascript",
+                "P5.JS"
+            ],
+            "algorithm": [],
+            "description": "Daniel Shiffman is always my great teacher of all time. He even always trigger's me to make simple but fun application.",
+            "link": "https://www.youtube.com/embed/RPB6rDT1ZqA?&playlist=RPB6rDT1ZqA&loop=1&autoplay=1&mute=1&controls=0"
+        },
+        {
+            "title": "Number Guessing - Mnist - Python",
+            "tech": [
+                "Python",
+                "Tensorflow",
+                "Keras",
+                "OpenCV",
+                "PyGame"
+            ],
+            "algorithm": [
+                "CNN",
+                "Alex Net"
+            ],
+            "description": "The reason behind this application is an asbsolute fun, i was also curious about how CNN works. I took Mnist because the dataset has already provided publicly.",
+            "link": "https://www.youtube.com/embed/0_fLwXJPGj8?&playlist=0_fLwXJPGj8&loop=1&autoplay=1&mute=1&controls=0"
+        }
+    ],
+    "WB1": [
+        {
+            "title": "IF Terapan - Presensi SDN Rarahan",
+            "tech": [
+                "CodeIgniter",
+                "Javascript",
+                "Bootstrap",
+                "HTML&CSS"
+            ],
+            "algorithm": [
+                "AJAX"
+            ],
+            "description": "This application is done due to assigment for one of course that i took called IF Terapan",
+            "link": "https://www.youtube.com/embed/erJCxYnSfs8?&playlist=erJCxYnSfs8&loop=1&autoplay=1&mute=1&controls=0"
+        },
+        {
+            "title": "Electronic Store",
+            "tech": [
+                "Vanila JS",
+                "Tilt.JS",
+                "HTML&CSS",
+                "AlibabaCloud"
+            ],
+            "algorithm": [],
+            "description": "This website is made for Alibaba Cloud Competition, althought didn't win, but i learn so much from this website",
+            "link": "https://www.youtube.com/embed/9hVFh9Et6SY?&playlist=9hVFh9Et6SY&loop=1&autoplay=1&mute=1&controls=0"
+        },
+        {
+            "title": "Arsitekku Store",
+            "tech": [
+                "Laravel",
+                "Splide.JS",
+                "Jetstream",
+                "AlibabaCloud"
+            ],
+            "algorithm": [],
+            "description": "is application is done due to assigment for one of course that i took called Project Management",
+            "link": "https://www.youtube.com/embed/1123JXlFPkw?&playlist=1123JXlFPkw&loop=1&autoplay=1&mute=1&controls=0"
+        },
+        {
+            "title": "Profile Website",
+            "tech": [
+                "Bootstrap",
+                "Vanila JS",
+                "HTML&CSS"
+            ],
+            "algorithm": [],
+            "description": "Back then when i was studying abroad, i was so bored, and i decided to make this website to throw off my boredom",
+            "link": "https://www.youtube.com/embed/yvoRtfd_xgA?&playlist=yvoRtfd_xgA&loop=1&autoplay=1&mute=1&controls=0"
+        },
+        {
+            "title": "Shoe Store",
+            "tech": [
+                "Bootstrap",
+                "Vanila JS",
+                "HTML&CSS"
+            ],
+            "algorithm": [],
+            "description": "Back then when i was studying abroad, i was so bored, and i decided to make this website to throw off my boredom",
+            "link": "https://www.youtube.com/embed/zH7pH78AWd4?&playlist=zH7pH78AWd4&loop=1&autoplay=1&mute=1&controls=0"
+        }
+    ],
+    "WB2": [
+        {
+            "title": "Electronic Store",
+            "tech": [
+                "Vanila JS",
+                "Tilt.JS",
+                "HTML&CSS",
+                "AlibabaCloud"
+            ],
+            "algorithm": [],
+            "description": "This website is made for Alibaba Cloud Competition, althought didn't win, but i learn so much from this website",
+            "link": "https://www.youtube.com/embed/9hVFh9Et6SY?&playlist=9hVFh9Et6SY&loop=1&autoplay=1&mute=1&controls=0"
+        },
+        {
+            "title": "Web Design Services",
+            "tech": [
+                "Adobe Premier"
+            ],
+            "algorithm": [],
+            "description": "This is no application or website, it's a video that i made for starting a freelance project, and to attract costumer.",
+            "link": "https://www.youtube.com/embed/eTvhsV2hDOg?&playlist=9hVFh9Et6SY&loop=1&autoplay=1&mute=1&controls=0"
+        },
+        {
+            "title": "Company Profile Website",
+            "tech": [
+                "Bootstrap",
+                "Vanila JS",
+                "HTML&CSS"
+            ],
+            "algorithm": [],
+            "description": "Lorem ipsum, atau ringkasnya lipsum, adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis atau presentasi visual seperti font, tipografi, dan tata letak.",
+            "link": "https://www.youtube.com/embed/iVJZS7CIx-Y?&playlist=9hVFh9Et6SY&loop=1&autoplay=1&mute=1&controls=0"
+        },
+        {
+            "title": "Personal Webpage",
+            "tech": [
+                "Wordpress"
+            ],
+            "algorithm": [],
+            "description": "This website is born out of curiosity with wordpress",
+            "link": "https://www.youtube.com/embed/O-fYZ9oXR5o?&playlist=9hVFh9Et6SY&loop=1&autoplay=1&mute=1&controls=0"
+        },
+        {
+            "title": "E-Commerce",
+            "tech": [
+                "Wordpress"
+            ],
+            "algorithm": [],
+            "description": "This website is born out of curiosity with wordpress",
+            "link": "https://www.youtube.com/embed/AOrnhal5-6A?&playlist=9hVFh9Et6SY&loop=1&autoplay=1&mute=1&controls=0"
+        }
+    ],
+    "DG": [
+        {
+            "title": "Family Design",
+            "tech": [
+                "Photoshop CS6"
+            ],
+            "algorithm": [],
+            "description": "This is designed for my brother birthday, when i have no money, i take advantage of my skill",
+            "link": [
+                "./asset/img/projects/grup1.JPG"
+            ]
+        },
+        {
+            "title": "Family Design",
+            "tech": [
+                "Photoshop CS6"
+            ],
+            "algorithm": [],
+            "description": "This was a special design for my parent's anniversary,when i have no money, i take advantage of my skill",
+            "link": [
+                "./asset/img/projects/grup2.JPG"
+            ]
+        },
+        {
+            "title": "[HELP] Kwu - Sipil",
+            "tech": [
+                "Photoshop CS6"
+            ],
+            "algorithm": [],
+            "description": "One of my senior ask me to help her to do a poster design for her course called KwU (Kewirausahaan = Business Planinng)",
+            "link": [
+                "./asset/img/projects/grup3-1.JPG",
+                "./asset/img/projects/grup3-2.JPG",
+                "./asset/img/projects/grup3-3.JPG",
+                "./asset/img/projects/grup3-4.JPG",
+                "./asset/img/projects/grup3-5.JPG"
+            ]
+        },
+        {
+            "title": "Certificate Design",
+            "tech": [
+                "Photoshop CS6"
+            ],
+            "algorithm": [],
+            "description": "These certificate is made for my organization's events",
+            "link": [
+                "./asset/img/projects/grup4-1.JPG",
+                "./asset/img/projects/grup4-2.JPG",
+                "./asset/img/projects/grup4-3.JPG",
+                "./asset/img/projects/grup4-4.JPG"
+            ]
+        },
+        {
+            "title": "Curriculum Vitae Design",
+            "tech": [
+                "Photoshop CS6"
+            ],
+            "algorithm": [],
+            "description": "This is an implementation from RuangGuru events that i took,",
+            "link": [
+                "./asset/img/projects/grup5-1.JPG",
+                "./asset/img/projects/grup5-2.JPG"
+            ]
+        }
+    ]
+}
