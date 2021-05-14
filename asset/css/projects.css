@@ -1,0 +1,600 @@
+.header2{
+    width: 100%;
+    height: 100%;
+    background-color: #0e060f;
+    position: absolute;
+    overflow: hidden;
+}
+
+.header2 svg{
+    position: absolute;
+    z-index: 5;
+    margin-top: -55px;
+}
+
+.header2 .circle1{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    padding-top: 10px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.header2 .circle1.active{
+    background-color: #4d4d4d !important;
+    color: white !important;
+}
+
+.header2 .circle1 h4{
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+    font-size: 5px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    display: inline;
+}
+
+
+.header2 .button-project{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: "Exo",sans-serif;
+    font-weight: 600;
+    z-index: 3;
+}
+
+.header2 .mark{
+    width: 100px;
+    height: 50px;
+    color: #6182ff;
+    background-color: #d0daff;
+    text-transform: uppercase;
+    font-family: "Exo",sans-serif;
+    font-weight: 600;
+    position: absolute;
+    transform: translateY(-50%);
+    left: 2em;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header2 .mark::before{
+    content: "";
+    position: absolute;
+    left: -50%;
+    width: 50px;
+    height: 3px;
+    background-color: white;
+
+}
+
+.header2 .astronot{
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    animation: astronot 3s ease-in-out infinite;
+    z-index: 2;
+}
+
+.header2 .astronot img{
+    width: 100px;
+    height: auto;
+}
+
+.header2 .astronot:hover p{
+    transform: scaleX(1);
+}
+
+.header2 .astronot p{
+    font-family: 'Roboto',sans-serif;
+    color: #292929;
+    background-color: white;
+    border-radius: 5px 5px 0px 5px;
+    padding: 7px;
+    font-size: 12px;
+    top: -3em;
+    left: -6em;
+    position: absolute;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: 0.3s ease-in-out;
+}
+
+.header2 img.astronot::before{
+    content: "Aye!! whuts up!";
+    display: block;
+    background-color: white;
+    font-family: "Roboto",sans-serif;
+    color: #292929;
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@keyframes astronot {
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-30px);}
+    100%{transform: translateY(0px);}
+}
+
+
+.header2 img.mars{
+    position: absolute;
+    bottom: -5em;
+    right: -30%;
+    animation: mars 30s ease-in-out infinite;
+    z-index: 1;
+}
+
+@keyframes mars {
+    from{
+        right: -30%;
+        transform: rotateX(0deg);
+    }
+    to{
+        right: 120%;
+        transform: rotate(360deg);
+    }
+}
+
+.header2 .earth{
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: -2em;
+    width: 100px;
+    height: 100px;
+    right: -30%;
+    animation: mars 20s infinite;
+}
+
+.header2 .earth img{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+}
+
+.header2 .projects{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%,-50%);
+    left: 55%;
+    top: 55%;
+    overflow: hidden;
+}
+
+.header2 .projects .video{
+    height: 80px;
+    width: 120px;
+    background-color: rgb(155, 155, 155);
+    position: absolute;
+    z-index: 3;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.header2 .projects .video .black-screen{
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.header2 .projects .video .black-screen h4{
+    font-family: "Exo",sans-serif;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    font-weight: 600;
+    color: rgb(75, 75, 75);
+    padding: 10px;
+}
+
+.header2 .projects .video iframe,.header2 .projects .video img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header2 .projects .video:hover .black-screen{
+    opacity: 0.8;
+}
+.header2 .projects .video:hover{
+    transform: scale(1.5) !important;
+}
+
+.header2 .projects .video:nth-child(1){
+    transform: scale(0.7);
+    top: 5%;
+    left: 100%;
+    animation: projects3 8s infinite 1s linear;
+}
+.header2 .projects .video:nth-child(2){
+    transform: scale(0.9);
+    top: 25%;
+    left: 100%;
+    animation: projects3 10s infinite 2s linear;
+}
+.header2 .projects .video:nth-child(3){
+    top: 54%;
+    left: 100%;
+    animation: projects3 15s infinite linear;
+}
+.header2 .projects .video:nth-child(4){
+    transform: scale(0.6);
+    top: 45%;
+    left: 100%;
+    animation: projects3 15s infinite 5s linear;
+}
+
+.header2 .projects .video:nth-child(5){
+    transform: scale(0.8);
+    bottom: 5%;
+    left: 100%;
+    animation: projects3 12s infinite 3.5s linear;
+}
+
+@keyframes projects3 {
+    from{left: 100%;}
+    to{left: -100%;}
+}
+
+.header2 .detail-project{
+    border-left: 5px solid #53005d;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    width: 300px;
+    height: 520px;
+    z-index: 10;
+    font-family: "Exo",sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.header2 .detail-project .get-wrapper{
+    padding: 20px;
+}
+
+.header2 .detail-project h4{
+    font-weight: 700;
+    margin-left: -20px;
+    font-size: 14px;
+}
+
+.header2 .detail-project .detail{
+    display: flex;
+    justify-content:space-around;
+    margin: 20px 0px 0px 10px;
+}
+
+.header2 .detail-project li{
+    font-family: 400;
+    font-size: 13px;
+}
+
+.header2 .detail-project .description{
+    width: 100%;
+    height: 62%;
+    padding: 20px;
+    position: relative;
+    top: -2%;
+    background-color: #b8b8b8;
+    color: rgb(56, 56, 56);
+}
+.header2 .detail-project .description h5{
+    font-family: "Exo",sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+.header2 .detail-project .description p{
+    font-family: "Roboto";
+    font-size: 12px;
+
+}
+
+.header2 .detail-project .description .description-image{
+    width: 230px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header2 .detail-project .description .description-image .img1{
+    position: relative;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s linear;
+}
+
+.header2 .detail-project .description .description-image .img1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.header2 .detail-project .description .description-image .img1 iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header2 .detail-project .description .btn-description{
+    position: absolute;
+    left: 1.5em;
+    bottom: 0.5em;
+}
+.header2 .detail-project .description .btn-description i{
+    font-size: 20px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.header2 .detail-project .description .btn-description i:hover{
+    transform: scale(1.2);
+}
+
+.header2 .detail-project .close-btn{
+    position: absolute;
+    right: 0.5em;
+    bottom: 0.5em;
+    z-index: 6;
+}
+
+.header2 .detail-project .close-btn i{
+    font-size: 25px;
+    color: #495057;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.header2 .detail-project .close-btn i:hover{
+    transform: scale(1.1);    
+}
+
+.showimage{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 99;
+    visibility: hidden;
+    opacity: 0;
+    background-color: black;
+    transition: 0.3s linear;
+}
+
+.showimage i{
+    position: absolute;
+    z-index: 2;
+    right: 0.5em;
+    top: 0.5em;
+    color: white;
+    font-size: 40px;
+}
+
+.showimage img{
+    z-index: 1;
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    position: absolute;
+    display: block;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+@media (min-width: 576px) {
+    .header2 .button-project{
+        left: 1em;
+    }
+
+    .header2 .astronot img{
+        width: 120px;
+    }
+
+    .header2 img.mars{
+        width: 200px;
+        height: auto;
+        animation: mars 30s linear infinite;
+    }
+
+    .header2 .earth{
+        width: 120px;
+        height: 120px;
+        animation: mars 20s linear infinite;
+    }
+
+    .header2 .detail-project{
+        width: 470px;
+        height: 470px;
+    }
+
+    .header2 .detail-project h4{
+        margin-left: -20px;
+        font-size: 14px;
+    }
+
+    .header2 .detail-project .detail{
+        justify-content:space-evenly;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .header2 .detail-project li{
+        font-size: 13px;
+    }
+
+    .header2 .detail-project .desc-title{
+        width: 60%;
+        pad: 10px;
+    }
+
+    .header2 .detail-project .description{
+        height: 49%;
+        padding: 20px;
+        top: -2%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .header2 .detail-project .description .btn-description{
+        left: 1.2em;
+        bottom: 2em;
+    }
+
+    .header2 .detail-project .close-btn{
+        bottom: 0.4em;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    .header2 .circle1{
+        top: 45%;
+        left: 3em;
+    }
+
+    .header2 .button-project{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        transform: translateY(-50%);
+        top: 45%;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-family: "Exo",sans-serif;
+        font-weight: 600;
+        z-index: 3;
+    }
+
+    .header2 .mark{
+        left: 80%;
+        top: 5em;
+        z-index: 3;
+    }
+
+    .header2 .mark::before{
+        left: 50%;
+        top: -100%;
+        width: 3px;
+        height: 50px;
+    }
+
+    .header2 .astronot img{
+        width: 120px;
+    }
+
+    .header2 .astronot p{
+        font-size: 16px;
+    }
+
+    .header2 img.mars{
+        width: 200px;
+        height: auto;
+        animation: mars 35s linear infinite;
+    }
+
+    .header2 .earth{
+        width: 120px;
+        height: 120px;
+        animation: mars 20s linear infinite;
+        z-index: 1;
+    }
+
+    .header2 .projects{
+        width: 600px;
+        height: 450px;
+        left: 50%;
+        top: 50%;
+    }
+
+    .header2 .projects .video{
+        height: 90px;
+        width: 150px;
+    }
+
+    .header2 .projects .video .black-screen{
+        width: 100%;
+        height: 100%;
+    }
+
+    .header2 .projects .video iframe,.header2 .projects .video img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .header2 .projects .video:nth-child(1){
+        animation: projects3 10s infinite 1s linear;
+    }
+    .header2 .projects .video:nth-child(2){
+        animation: projects3 12s infinite 2s linear;
+    }
+}
+
+@media (min-width: 992px) {
+    .header2 .projects{
+        width: 900px;
+        height: 450px;
+        left: 50%;
+        top: 50%;
+    }
+
+    .header2 .projects .video{
+        height: 110px;
+        width: 170px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    
+}

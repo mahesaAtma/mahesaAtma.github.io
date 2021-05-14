@@ -1,0 +1,242 @@
+.header3{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #242424;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.header3 .wrapper-isi{
+    position: absolute;
+    transform: translate(-50%,-50%) rotate(-45deg);
+    left: 50%;
+    top: 60%;
+}
+
+.header3 .baris1{
+    display: flex;
+}
+
+.header3 .kolom,.header3 .kolom-offset{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.header3 .kolom{
+    cursor: pointer;
+    background-color: white;
+    transition: 0.1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header3 .kolom img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    transform: rotate(45deg);
+}
+
+.header3 .kolom:hover{
+    transform: scale(1.2);
+}
+
+.header3 .kolom-offset{
+    background-color: transparent;
+}
+
+.header3 .detail-skill{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 60%;
+    left: 50%;
+    z-index: 3;
+    width: 300px;
+    height: 200px;
+    background-color: #e6e6e6;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.header3 .detail-skill .detail-skill-deskripsi{
+    border-left: 2px solid #c1c1c1;
+    margin-left: 0px;
+    padding: 10px 0px 10px 10px;
+}
+
+.header3 .detail-skill .detail-skill-caption{
+    padding: 10px 10px 10px 0px;
+}
+
+.header3 .detail-skill img{
+    width: 50px;
+    height: auto;
+}
+
+.header3 .detail-skill h5{
+    font-family: "Exo",sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.header3 .detail-skill p{
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.header3 .mark{
+    width: 100px;
+    height: 50px;
+    color: #353535;
+    background-color: #c1c1c1;
+    text-transform: uppercase;
+    font-family: "Exo",sans-serif;
+    font-weight: 600;
+    position: absolute;
+    transform: translateY(-50%);
+    left: 2em;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header3 .mark::before{
+    content: "";
+    position: absolute;
+    left: -50%;
+    width: 50px;
+    height: 3px;
+    background-color: white;
+
+}
+
+.header3 .detail-skill .close-btn{
+    position: absolute;
+    right: 0.5em;
+    bottom: 0.5em;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+.header3 .detail-skill .close-btn:hover{
+    transform: scale(1.2);
+}
+
+@media (min-width: 576px) {
+    .header3 .wrapper-isi{
+        top: 55%;
+    }
+
+    .header3 .kolom,.header3 .kolom-offset{
+        width: 100px;
+        height: 100px;
+        margin: 3px;
+    }
+
+    .header3 .kolom img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .header3 .detail-skill{
+        top: 55%;
+        width: 400px;
+        height: 250px;
+    }
+
+    .header3 .detail-skill .detail-skill-deskripsi{
+        margin-left: 0px;
+    }
+
+    .header3 .detail-skill h5{
+        font-size: 15px;
+    }
+
+    .header3 .detail-skill p{
+        font-size: 11px;
+    }
+
+}
+
+@keyframes skillAnimation {
+    0%{
+        background-color: #0E060F;
+    }
+
+    33%{
+        background-color: rgb(39, 2, 2);
+    }
+    66%{
+        background-color: #242424;
+    }
+    100%{
+        background-color: #0E060F;
+    }
+}
+
+@media (min-width: 768px) {
+    .header3{
+        background-color: #0E060F;
+        animation: skillAnimation 5s ease-in-out infinite;
+    }
+    .header3 .detail-skill{
+        width: 500px;
+        height: 300px;
+    }
+
+     .header3 .detail-skill .detail-skill-deskripsi{
+        margin-left: 20px;
+    }
+    .header3 .detail-skill .detail-skill-caption{
+        padding: 20px 20px 20px 20px;
+    }
+
+    .header3 .detail-skill h5{
+        font-size: 16px;
+    }
+
+    .header3 .detail-skill p{
+        font-size: 13px;
+    }
+
+    .header3 .mark{
+        left: 5em;
+        top: 5em;
+    }
+
+    .header3 .mark::before{
+        left: 50%;
+        top: -100%;
+        width: 3px;
+        height: 50px;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+    .header3 .kolom,.header3 .kolom-offset{
+        width: 110px;
+        height: 110px;
+        margin: 3px;
+    }
+
+   .header3 .detail-skill{
+        width: 500px;
+        height: 300px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    
+}

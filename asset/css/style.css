@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+.arrow-right, .arrow-left{
+    display: none ;
+}
+
+.wrap.slideAnimation{
+    display: none;
+}
+
+.header1{
+    width: 100%;
+    height: 100%;
+    background-color: #ffc1c1;
+    position: absolute;
+    overflow: hidden;
+}
+
+.header1 svg{
+    width: 150%;
+    height: auto;
+    position: absolute;
+    bottom: -15em;
+    left: -15em;
+    z-index: 0;
+}
+
+/* LAMP SECTION */
+.header1 .lamp{
+    z-index: 2;
+    position: absolute;
+    left: 2em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header1 .lamp img{
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+.header1 .light{
+    left: 0;
+    bottom: -96%;
+    position: absolute;
+    width: 98%;
+    height: 100%;
+    border-top: 20px solid rgb(65, 65, 65);
+	border-left: 25px solid transparent;
+	border-right: 20px solid transparent;
+    /* opacity: 0; */
+    transition: 0.2s ease-in-out;
+}
+
+.lightOn{
+    /* opacity: 1 !important; */
+    border-top: 20px solid rgb(255, 254, 220) !important;
+}
+
+.header1 .lamp p{
+    position: relative;
+    top: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* MAHESA SECTION */
+.header1 img.mahesa{
+    filter: brightness(0%);
+    width: 50%;
+    height: auto;
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.mahesaOn{
+    filter: brightness(100%) !important;
+}
+
+/* GREETING SECTION */
+.greeting{
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 40%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.greeting p{
+    margin-top: 20px;
+    text-align: center;
+    width: 100px;
+    font-family: 'Roboto',sans-serif;
+    position: absolute;
+    z-index: 3;
+}
+.greeting .box1{
+    width: 180px;
+    height: 70px;
+    position: absolute;
+    background-color: #e7f5fd;
+    transform: skewY(5deg);
+    z-index: 2;
+}
+.greeting .box2{
+    z-index: 1;
+    position: absolute;
+    transform: skewY(170deg);
+    width: 200px;
+    height: 70px;
+    background-color: #ff8484;
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* MOUSE SECTION */
+.mouse{
+    width: 40px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 1.5em;
+    right: 1.5em;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mouse .line{
+    width: 3px;
+    height: 20px;
+    background-color: black;
+}
+
+.mouse .dot{
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+    top: 0%;
+    position: relative;
+    animation: mouseanim 1s infinite;
+}
+
+@keyframes mouseanim {
+    from{
+        top: 0%;
+        opacity: 1;
+    }
+    to{
+        top: 55%;
+        opacity: 0;
+    }
+}
+
+.introduction{
+    font-family: "Roboto",sans-serif;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 60%;
+    left: 80%;
+    width: 300px;
+}
+
+.introduction p:first-child{
+    color: rgb(99, 99, 99);
+    font-size: 12px;
+    line-height: 0px;
+}
+.introduction p:last-child{
+    font-size: 13px;
+    margin-left: 6px;
+}
+
+.introduction p:last-child span{
+    width: 100%;
+    height: 3px;
+    width: 30%;
+    margin-top: 10px;
+    display: block;
+    background-color: #ff4e4e;
+}
+
+.wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.outter-wrapper{
+    height: 100%;
+    width: 100%;
+}
+
+
+@media (min-width: 576px) {
+    .header1 svg{
+        width: 150%;
+        bottom: -22em;
+        left: -20em;
+    }
+
+    /* GREETING SECTION */
+    .greeting{
+        left: 60%;
+    }
+
+    .introduction{
+        top: 65%;
+        left: 75%;
+    }
+
+}
+
+@keyframes arrow {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.5);}
+    100%{transform: scale(1);}
+}
+
+@media (min-width: 768px) {
+    .wrap.slideAnimation{
+        display: block;
+    }
+    .outter-wrapper{
+        overflow: hidden;
+    }
+
+    .outter-wrapper .wrap{
+        left: 0;
+        transition: 0.8s ease-in-out;
+    }
+    .arrow-right{
+        display: block;
+    }
+    .arrow-left{
+        display: none;
+    }
+    .arrow-right,.arrow-left{
+        position: absolute;
+        transform: translateY(-50%) scale(1);
+        top: 60%;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    .arrow-left{
+        left: 2em;
+    }
+
+    .arrow-right{
+        right: 4em;
+    }
+    
+    .arrow-right i,.arrow-left i{
+        position: absolute;
+        animation: arrow 2s infinite;
+    }
+    
+    .arrow-right i:first-child{
+        padding-left: 7px;
+        font-size: 30px;
+    }
+
+    .arrow-right i:last-child{
+        padding-top: 5px;
+        font-size: 20px;
+    }
+    
+    .arrow-left i:first-child{
+        padding-right: 7px;
+        font-size: 30px;
+    }
+    
+    .arrow-left i:last-child{
+        padding-top: 4px;
+        padding-left: 12px;
+        font-size: 20px;
+    }
+
+    .header1 svg{
+        width: 110%;
+        bottom: -20em;
+        left: -20em;
+    }
+
+    /* MAHESA SECTION */
+    .header1 img.mahesa{
+        width: 35%;
+    }
+
+    /* GREETING SECTION */
+    .greeting{
+        left: 50%;
+        top: 40%;
+    }
+
+    .greeting p{
+        font-size: 17px;
+    }
+    .greeting .box1{
+        width: 220px;
+        height: 80px;
+    }
+    .greeting .box2{
+        width: 240px;
+        height: 90px;
+    }
+
+    .introduction{
+        top: 70%;
+        left: 70%;
+    }
+
+    .introduction p:first-child{
+        font-size: 14px;
+    }
+    .introduction p:last-child{
+        font-size: 16px;
+        margin-left: 6px;
+    }
+
+    .outter-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .header1 svg{
+        width: 110%;
+        bottom: -24em;
+        left: -24em;
+    }
+
+    /* MAHESA SECTION */
+    .header1 img.mahesa{
+        width: 35%;
+    }
+
+    /* GREETING SECTION */
+    .greeting{
+        left: 50%;
+        top: 40%;
+    }
+
+    .greeting p{
+        font-size: 17px;
+    }
+    .greeting .box1{
+        width: 240px;
+        height: 90px;
+    }
+    .greeting .box2{
+        width: 260px;
+        height: 100px;
+    }
+
+    .introduction{
+        width: 400px;
+        top: 70%;
+        left: 70%;
+    }
+
+    .introduction p:first-child{
+        font-size: 16px;
+    }
+    .introduction p:last-child{
+        font-size: 18px;
+        margin-left: 6px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .header1 svg{
+        width: 90%;
+        bottom: -27em;
+        left: -27em;
+    }
+
+    /* MAHESA SECTION */
+    .header1 img.mahesa{
+        width: 28%;
+    }
+
+    /* GREETING SECTION */
+    .greeting{
+        left: 50%;
+        top: 40%;
+    }
+
+    .greeting p{
+        font-size: 17px;
+    }
+    .greeting .box1{
+        width: 270px;
+        height: 100px;
+    }
+    .greeting .box2{
+        width: 290px;
+        height: 110px;
+    }
+
+    .introduction{
+        width: 400px;
+        top: 70%;
+        left: 70%;
+    }
+
+    .introduction p:first-child{
+        font-size: 16px;
+    }
+    .introduction p:last-child{
+        font-size: 18px;
+        margin-left: 6px;
+    }
+}

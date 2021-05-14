@@ -1,0 +1,174 @@
+.header4{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    overflow: hidden;
+}
+
+img.lekukan{
+    display: none;
+}
+
+.header4 .mark{
+    width: 150px;
+    height: 50px;
+    color: #353535;
+    background-color: #c1c1c1;
+    text-transform: uppercase;
+    font-family: "Exo",sans-serif;
+    font-weight: 600;
+    position: absolute;
+    transform: translateY(-50%);
+    right: 5em;
+    top: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header4 .mark::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -100%;
+    width: 3px;
+    height: 50px;
+    background-color: black;
+
+}
+
+
+.header4 .people{
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    z-index: 2;
+}
+
+.header4 .people #chat{
+    position: absolute;
+    font-size: 13px;
+    width: 163.98px;
+    height: 78px;
+    top: -2em;
+    left: -13em;
+    background: #e7e7e7;
+    -webkit-box-shadow: 9px 13px 21px -5px rgba(0,0,0,0.35);
+    -moz-box-shadow: 9px 13px 21px -5px rgba(0,0,0,0.35);
+    box-shadow: 9px 13px 21px -5px rgba(0,0,0,0.35);
+    padding: 15px;
+    border-radius: 10px 10px 0px 10px;
+}
+
+.header4 .people img{
+    width: 150px;
+    height: auto;
+}
+
+.header4 img.layer1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    z-index: 1;
+}
+
+.header4 .icons{
+    position: relative;
+    top: 25%;
+    padding: 20px;
+}
+
+.header4 .icons .part1{
+    display: flex;
+    margin-left: 40px;
+}
+.header4 .icons .part1:last-child{
+    margin-left: 0;
+    margin-top: 40px;
+}
+
+.header4 .icons .part1 .baris-icon{
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px 5px 0px 0px;
+}
+
+.header4 .icons .part1 .baris-icon img{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    top: -25px;
+}
+
+@media (min-width: 576px) {
+
+    .header4 .icons{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 35%;
+        padding: 20px;
+    }
+
+    .header4 .icons .part1{
+        display: flex;
+        margin-left: 40px;
+    }
+    .header4 .icons .part1:last-child{
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .header4 .icons .part1 .baris-icon{
+        width: 120px;
+        height: 30px;
+        border-radius: 10px;
+        margin: 20px 15px 0px 0px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .header4 img.lekukan{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: auto;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    
+}
+
+@media (min-width: 1200px) {
+    .header4 .people img{
+        width: 200px;
+        height: auto;
+    }
+
+    .header4 img.layer1{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30%;
+        z-index: 0;
+    }
+
+    .header4 .icons{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 45%;
+        top: 50%;
+        padding: 20px;
+    }
+
+}
